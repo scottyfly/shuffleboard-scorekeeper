@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="images/ShuffleBoard.png" />
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg" />
+    <title>Shufflebooard Score Keeper</title>
+    <link rel="stylesheet" href="shuffleboard.css" />
+  </head>
+
+  <body>
+    <div id="allThings">
+      <div id="menuDiv">
+        <img id="menuIcon" src="images/menuIcon.png" alt="" />
+      </div>
+      <menu id="menu">
+        <p>
+          Tap on "Gold" or "Black" to edit team name. Click on the first frame and
+        then click on score buttons to start adding to your score. Good luck!
+        <br />
+        <br />
+        App created by Scott Flynn. Send me money for a coffee, so I can keep
+        coding all night! <br />
+        <br />
+        Venmo: @ScottJFlynn <br />
+        Paypal: scottfly@gmail.com <br />
+        <br />
+        Check out the kicking game I invented called RollGoal here!
+        <a href="https://www.rollgoal.com/">RollGoal.com</a>
+        </p>
+      </menu>
+      <!-- <div class="tableContainer">
+        <table>
+          <tr class="allFrames">
+            <th id="frameTitle">#</th>
+            <th class="GoldName">Gold</th>
+            <th class="BlackName">Black</th>
+          </tr>
+          <tr class="allFrames">
+            <td class="frameNo">1</td>
+            <td class="goldTurn">0</td>
+            <td class="blackTurn">0</td>
+          </tr>
+          <tr class="allFrames">
+            <td class="frameNo">2</td>
+            <td class="goldTurn"></td>
+            <td class="blackTurn"></td>
+          </tr>
+          <tr class="allFrames">
+            <td class="frameNo">3</td>
+            <td class="goldTurn"></td>
+            <td class="blackTurn"></td>
+          </tr>
+          <tr class="allFrames">
+            <td class="frameNo">4</td>
+            <td class="goldTurn"></td>
+            <td class="blackTurn"></td>
+          </tr>
+          <tr class="allFrames">
+            <td class="frameNo">5</td>
+            <td class="goldTurn"></td>
+            <td class="blackTurn"></td>
+          </tr>
+          <tr class="allFrames">
+            <td class="frameNo">6</td>
+            <td class="goldTurn"></td>
+            <td class="blackTurn"></td>
+          </tr>
+          <tr class="allFrames">
+            <td class="frameNo">7</td>
+            <td class="goldTurn"></td>
+            <td class="blackTurn"></td>
+          </tr>
+          <tr class="allFrames">
+            <td class="frameNo">8</td>
+            <td class="goldTurn"></td>
+            <td class="blackTurn"></td>
+          </tr>
+          <tr class="allFrames">
+            <td class="frameNo">9</td>
+            <td class="goldTurn"></td>
+            <td class="blackTurn"></td>
+          </tr>
+          <tr class="allFrames">
+            <td class="frameNo">10</td>
+            <td class="goldTurn"></td>
+            <td class="blackTurn"></td>
+          </tr>
+        </table>
+      </div> -->
+
+      <div id="pointButtons">
+        <!-- <div id="baseDiv"><img id="base" src="images/base.png" alt="" /></div> -->
+        <div id="baseDiv"></div>
+        <!-- <div id="blkDiv"><img id="baseblk" src="images/baseblk.png" alt="" /></div> -->
+        <div id="blkDiv"></div>
+        <!-- <div id="yloDiv"><img id="baseylo" src="images/baseylo.png" alt="" /></div> -->
+        <div id="yloDiv"></div>
+        <img id="ten" src="images/10btn.png" alt="" />
+        <img id="eight" src="images/8btn.png" alt="" />
+        <img id="seven" src="images/7btn.png" alt="" />
+        <img id="minus10" src="images/minus10btn.png" alt="" />
+      </div>
+      <div id="frameSelect">
+        <label for="howMany">How many frames?</label>
+        <select name="select" id="howMany">
+          <option value="4">4</option>
+          <option selected="selected" value="8">8</option>
+          <option value="10">10</option>
+        </select>
+        <!-- <button id="submit">Submit</button> -->
+      </div>
+      <table id="horizontalTable">
+        <tr class="allFrames">
+          <th id="diskDiv" class="frameNo">
+            <p>Team</p>
+            <img id="yellowDisk" src="images/yellowDisk.png" alt="" />
+            <img id="blackDisk" src="images/blackDisk.png" alt="" />
+          </th>
+          <th class="frameNo onefr">1</th>
+          <th class="frameNo onefr">2</th>
+          <th class="frameNo onefr">3</th>
+          <th class="frameNo onefr">4</th>
+          <th class="frameNo fvet">5</th>
+          <th class="frameNo fvet">6</th>
+          <th class="frameNo fvet">7</th>
+          <th class="frameNo fvet">8</th>
+          <th class="frameNo ninten">9</th>
+          <th class="frameNo ninten">10</th>
+        </tr>
+        <tr class="allFrames">
+          <th class="gold GoldName">Gold</th>
+          <td class="gold goldTurn onefr">0</td>
+          <td class="gold goldTurn onefr"></td>
+          <td class="gold goldTurn onefr"></td>
+          <td class="gold goldTurn onefr"></td>
+          <td class="gold goldTurn fvet"></td>
+          <td class="gold goldTurn fvet"></td>
+          <td class="gold goldTurn fvet"></td>
+          <td class="gold goldTurn fvet"></td>
+          <td class="gold goldTurn ninten"></td>
+          <td class="gold goldTurn ninten"></td>
+        </tr>
+        <tr class="allFrames">
+          <th class="black BlackName">Black</th>
+          <td class="black blackTurn onefr">0</td>
+          <td class="black blackTurn onefr"></td>
+          <td class="black blackTurn onefr"></td>
+          <td class="black blackTurn onefr"></td>
+          <td class="black blackTurn fvet"></td>
+          <td class="black blackTurn fvet"></td>
+          <td class="black blackTurn fvet"></td>
+          <td class="black blackTurn fvet"></td>
+          <td class="black blackTurn ninten"></td>
+          <td class="black blackTurn ninten"></td>
+        </tr>
+      </table>
+
+      <div class="pointsArea">
+        Gold Points:
+        <div id="goldArray"></div>
+      </div>
+      <div class="pointsArea">
+        Black Points:
+        <div id="blackArray"></div>
+      </div>
+      <div id="extraBtns">
+        <button id="delete">Undo Last</button>
+        <button id="plus1">+1</button>
+        <button id="minus1">-1</button>
+        <br />
+        <button id="reset">Reset Scores</button>
+        <button id="copyScores">Copy Scores to Clipboard</button>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="shuffle.js"></script>
+  </body>
+</html>

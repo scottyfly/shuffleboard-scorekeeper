@@ -1,0 +1,344 @@
+body {
+  background-image: linear-gradient(#31939c, #1c7078);
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overscroll-behavior: contain;
+}
+
+#allThings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menuDiv {
+  width: 43px;
+  height: auto;
+  position: fixed;
+  right: 2px;
+  top: 2px;
+}
+
+#menuIcon {
+  width: 43px;
+  height: auto;
+}
+
+#menu {
+  /* display: none; */
+  overflow-x: hidden;
+  width: 0;
+  color: white;
+  background-color: rgb(9, 9, 165);
+  z-index: 2;
+  position: fixed;
+  right: 0;
+  top: 0;
+  /* margin-left: 180px; */
+  margin-top: 0;
+  height: 100%;
+  box-shadow: -3px 3px 15px black;
+  padding: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+#menu p {
+  margin: 20px;
+}
+
+#menu a {
+  color: rgb(235, 210, 74);
+}
+
+#frameSelect {
+  color: white;
+}
+
+.onefr {
+  display: table-cell;
+}
+
+.fvet {
+  display: table-cell;
+}
+
+.ninten {
+  display: none;
+}
+
+/* .allFrames:nth-of-type(2),
+.allFrames:nth-of-type(3) {
+  font-size: 1.5em;
+} */
+table {
+  color: white;
+  margin: auto;
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#diskDiv {
+  background-color: white;
+  position: relative;
+}
+
+#diskDiv p {
+  font-size: 0px;
+  position: absolute;
+}
+
+#yellowDisk {
+  width: 40px;
+  height: auto;
+  padding-top: 5px;
+  height: auto;
+  /* position: absolute; */
+}
+
+#blackDisk {
+  display: none;
+  width: 40px;
+  height: auto;
+  padding-top: 5px;
+  height: auto;
+  /* position: absolute; */
+}
+
+/* #frameTitle {
+  width: 50px;
+} */
+
+th,
+td {
+  border: solid white 3px;
+  text-align: center;
+  font-size: 1.5em;
+  width: 50px;
+}
+
+th {
+  height: 60px;
+}
+
+.frameNo {
+  text-align: center;
+  font-size: 1.7em;
+  color: white;
+  height: 50px;
+}
+
+.pointsArea {
+  color: white;
+  /* text-decoration: underline; */
+}
+
+#goldArray,
+#blackArray {
+  color: white;
+  display: inline;
+}
+
+.GoldName {
+  background-color: #ffd700;
+  color: black;
+  text-align: center;
+}
+
+.BlackName {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.goldTurn,
+.blackTurn {
+  /* font-size: 2.5em; */
+  color: white;
+  text-align: center;
+}
+
+.goldTurn:hover,
+.blackTurn:hover {
+  cursor: pointer;
+}
+
+.yellowBG {
+  background-color: gold;
+  color: black;
+}
+
+.blackBG {
+  background-color: black;
+  color: white;
+}
+
+#goldTotal {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+#baseDiv {
+  width: 100%;
+  height: 465px;
+  background-image: url("images/base.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: local;
+  background-size: contain;
+}
+
+#yloDiv {
+  display: none;
+  width: 100%;
+  height: 465px;
+  background-image: url("images/baseylo.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: local;
+  background-size: contain;
+}
+
+#blkDiv {
+  display: none;
+  width: 100%;
+  height: 465px;
+  background-image: url("images/baseblk.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: local;
+  background-size: contain;
+}
+
+#base {
+  display: block;
+
+  top: 10px;
+  right: 184px;
+  width: 376px;
+  z-index: -1;
+  margin: auto;
+}
+
+#baseblk {
+  /* position: absolute; */
+  display: none;
+  /* position: fixed; */
+  top: 10px;
+  right: 184px;
+  width: 376px;
+  z-index: -1;
+  margin: auto;
+}
+
+#baseylo {
+  /* position: absolute; */
+  display: none;
+  /* position: fixed; */
+  top: 10px;
+  right: 184px;
+  width: 376px;
+  z-index: -1;
+  margin: auto;
+}
+
+#pointButtons {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 471px;
+  width: 318px;
+}
+
+#ten {
+  position: absolute;
+  margin: auto;
+  top: 26px;
+  right: 129px;
+  width: 57px;
+  z-index: 1;
+  -webkit-filter: drop-shadow(3px 3px 3px black);
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+#ten:active {
+  top: 27px;
+  right: 131px;
+  width: 54px;
+  -webkit-filter: drop-shadow(1px 1px 1px black);
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+#ten:hover {
+  cursor: pointer;
+}
+
+#eight {
+  position: absolute;
+  margin: 2px auto;
+  top: 121px;
+  right: 80px;
+  width: 155px;
+  z-index: 1;
+  -webkit-filter: drop-shadow(3px 3px 3px black);
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+#eight:active {
+  top: 123px;
+  right: 82px;
+  width: 151px;
+  -webkit-filter: drop-shadow(1px 1px 1px black);
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+#eight:hover {
+  cursor: pointer;
+}
+
+#seven {
+  position: absolute;
+  margin: 2px auto;
+  top: 266px;
+  right: 33px;
+  width: 248px;
+  z-index: 1;
+  -webkit-filter: drop-shadow(3px 3px 3px black);
+  filter: drop-shadow(3px 3px 3px black);
+}
+#seven:active {
+  top: 268px;
+  right: 35px;
+  width: 244px;
+  -webkit-filter: drop-shadow(1px 1px 1px black);
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+#seven:hover {
+  cursor: pointer;
+}
+
+#minus10 {
+  position: absolute;
+  margin: 2px auto;
+  top: 405px;
+  right: 30px;
+  width: 254px;
+  z-index: 1;
+  -webkit-filter: drop-shadow(3px 3px 3px black);
+  filter: drop-shadow(3px 3px 3px black);
+}
+#minus10:active {
+  top: 407px;
+  right: 32px;
+  width: 250px;
+  -webkit-filter: drop-shadow(1px 1px 1px black);
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+#minus:hover {
+  cursor: pointer;
+}
